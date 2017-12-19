@@ -1,0 +1,7 @@
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\helloWorld\obj\Debug\helloWorld.csprojResolveAssemblyReference.cache
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\helloWorld\obj\Debug\helloWorld.csproj.CoreCompileInputs.cache
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\helloWorld\bin\Debug\helloWorld.exe.config
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\helloWorld\bin\Debug\helloWorld.exe
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\helloWorld\bin\Debug\helloWorld.pdb
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\helloWorld\obj\Debug\helloWorld.exe
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\helloWorld\obj\Debug\helloWorld.pdb
