@@ -10,9 +10,9 @@ namespace helloWorld
     {
         static void Main(string[] args)
         {
-            string myName;
-            myName = Console.ReadLine();
-            Console.WriteLine("Hello, world! " + myName);
+            Person_greater greet;
+            greet = new Person_greater();
+            greet.SayHello();
             Console.ReadLine();
 
         }
