@@ -1,0 +1,7 @@
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\kalkolators\bin\Debug\kalkolators.exe.config
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\kalkolators\bin\Debug\kalkolators.exe
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\kalkolators\bin\Debug\kalkolators.pdb
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\kalkolators\obj\Debug\kalkolators.csprojResolveAssemblyReference.cache
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\kalkolators\obj\Debug\kalkolators.csproj.CoreCompileInputs.cache
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\kalkolators\obj\Debug\kalkolators.exe
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\kalkolators\obj\Debug\kalkolators.pdb
