@@ -1,0 +1,7 @@
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\smarter calculator\obj\Debug\smarter calculator.csprojResolveAssemblyReference.cache
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\smarter calculator\obj\Debug\smarter calculator.csproj.CoreCompileInputs.cache
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\smarter calculator\bin\Debug\smarter calculator.exe.config
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\smarter calculator\bin\Debug\smarter calculator.exe
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\smarter calculator\bin\Debug\smarter calculator.pdb
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\smarter calculator\obj\Debug\smarter calculator.exe
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\smarter calculator\obj\Debug\smarter calculator.pdb
