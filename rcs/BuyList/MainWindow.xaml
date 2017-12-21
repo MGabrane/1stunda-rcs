@@ -1,0 +1,17 @@
+﻿<Window x:Class="BuyList.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BuyList"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Background="Pink">
+        <TextBox x:Name="BuyListItemName" HorizontalAlignment="Left" Height="22" Margin="65.4,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" Grid.Column="1"></TextBox>
+        <Button x:Name="AddListItemButton" Click="AddListItemButton_Click" Content="Button" HorizontalAlignment="Left" Height="63" Margin="263.8,120,0,0" VerticalAlignment="Top" Width="141" Grid.Column="1"/>
+        <ScrollViewer Margin="65,104,295.4,68.8">
+            <ItemsControl x:Name="BuyItemsListControl" HorizontalAlignment="Right"/>
+        </ScrollViewer>
+
+    </Grid>
+</Window>

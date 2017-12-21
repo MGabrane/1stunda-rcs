@@ -1,0 +1,15 @@
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\BuyList\bin\Debug\BuyList.exe.config
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\BuyList\bin\Debug\BuyList.exe
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\BuyList\bin\Debug\BuyList.pdb
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\BuyList\obj\Debug\BuyList.csprojResolveAssemblyReference.cache
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\BuyList\obj\Debug\MainWindow.g.cs
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\BuyList\obj\Debug\App.g.cs
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\BuyList\obj\Debug\BuyList_MarkupCompile.cache
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\BuyList\obj\Debug\BuyList_MarkupCompile.lref
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\BuyList\obj\Debug\MainWindow.baml
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\BuyList\obj\Debug\BuyList.g.resources
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\BuyList\obj\Debug\BuyList.Properties.Resources.resources
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\BuyList\obj\Debug\BuyList.csproj.GenerateResource.Cache
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\BuyList\obj\Debug\BuyList.csproj.CoreCompileInputs.cache
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\BuyList\obj\Debug\BuyList.exe
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\BuyList\obj\Debug\BuyList.pdb
