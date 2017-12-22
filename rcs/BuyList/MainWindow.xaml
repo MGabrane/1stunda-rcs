@@ -7,11 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid Background="Pink">
-        <TextBox x:Name="BuyListItemName" HorizontalAlignment="Left" Height="22" Margin="65.4,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" Grid.Column="1"></TextBox>
-        <Button x:Name="AddListItemButton" Click="AddListItemButton_Click" Content="Button" HorizontalAlignment="Left" Height="63" Margin="263.8,120,0,0" VerticalAlignment="Top" Width="141" Grid.Column="1"/>
-        <ScrollViewer Margin="65,104,295.4,68.8">
-            <ItemsControl x:Name="BuyItemsListControl" HorizontalAlignment="Right"/>
+        <TextBox x:Name="BuyListItemName" HorizontalAlignment="Left" Height="63" Margin="65,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186"/>
+        <Button x:Name="AddListItemButton" Click="AddListItemButton_Click" Content="Pievienot" HorizontalAlignment="Left" Height="63" Margin="278,53,0,0" VerticalAlignment="Top" Width="141"/>
+        <ScrollViewer Margin="65,134,267.4,60.8">
+            <ListBox x:Name="BuyItemsListControl" HorizontalAlignment="Right">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <TextBlock FontFamily="Impact" Text="{Binding }" />
+                            
+                    </WrapPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            </ListBox>
         </ScrollViewer>
+        <Button Content="Saglabāt lietas" HorizontalAlignment="Left" Height="63" Margin="280,121,0,0" VerticalAlignment="Top" Width="140" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="22" Margin="65,31,0,0" TextWrapping="Wrap" Text="Ievadiet pirkumu" VerticalAlignment="Top" Width="158"/>
+        <Button Content="Ielāde" HorizontalAlignment="Left" Height="63" Margin="280,189,0,0" VerticalAlignment="Top" Width="141" Click="Button_Click_1" RenderTransformOrigin="1.301,0.083"/>
+        <Button Content="Dzēst" HorizontalAlignment="Left" Height="27" Margin="322,257,0,0" VerticalAlignment="Top" Width="65" Click="Button_Click_2"/>
 
     </Grid>
 </Window>
