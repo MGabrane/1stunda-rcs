@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "smarter calculator", "smart
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuyList", "BuyList\BuyList.csproj", "{9B96E616-C171-47A2-93B5-67AEBF6D268A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo", "ToDo\ToDo.csproj", "{17CBF84E-B4C3-4FAA-8887-EF128A3DDA34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9B96E616-C171-47A2-93B5-67AEBF6D268A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B96E616-C171-47A2-93B5-67AEBF6D268A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B96E616-C171-47A2-93B5-67AEBF6D268A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17CBF84E-B4C3-4FAA-8887-EF128A3DDA34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17CBF84E-B4C3-4FAA-8887-EF128A3DDA34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17CBF84E-B4C3-4FAA-8887-EF128A3DDA34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17CBF84E-B4C3-4FAA-8887-EF128A3DDA34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

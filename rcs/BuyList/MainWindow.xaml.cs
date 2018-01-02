@@ -17,7 +17,6 @@ namespace BuyList
 {
     using System.Collections.ObjectModel;
     using System.IO;
-
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -54,22 +53,14 @@ namespace BuyList
             File.WriteAllLines(@"C:\Users\Madza\Desktop\Code1_buyList", this.BuyItemList);
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            var todosFromEile = File.ReadAllLines(@"C:\Users\Madza\Desktop\Code1_buyList");
-            for (int i = 0; 1<todosFromEile.Length; i++)
-            {
-                string curentTodo = todosFromEile[i];
-                this.BuyItemList.Add(curentTodo);
-            }
-            MessageBox.Show("all tems have been loaded");
-        }
-
+        
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            foreach (var selectedItem in this.BuyItemList.selectedItems)
+            var selectedItems = this.BuyItemsListControl.SelectedItems;
+            for (int i = 0; i < selectedItems.Count; i++)
             {
-                this.BuyItemList.Remove(selectedItem as string);
+                var selectedItem = selectedItems[i] as string;
+                this.BuyItemList.Remove(selectedItem);
             }
             
         }

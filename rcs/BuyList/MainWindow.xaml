@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid Background="Pink">
-        <TextBox x:Name="BuyListItemName" HorizontalAlignment="Left" Height="63" Margin="65,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186"/>
+        <TextBox x:Name="BuyListItemName" HorizontalAlignment="Left" Height="63" Margin="65,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" TextChanged="BuyListItemName_TextChanged"/>
         <Button x:Name="AddListItemButton" Click="AddListItemButton_Click" Content="Pievienot" HorizontalAlignment="Left" Height="63" Margin="278,53,0,0" VerticalAlignment="Top" Width="141"/>
         <ScrollViewer Margin="65,134,267.4,60.8">
             <ListBox x:Name="BuyItemsListControl" HorizontalAlignment="Right">

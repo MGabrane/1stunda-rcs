@@ -1,0 +1,15 @@
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\WpfApp1\obj\Debug\App.g.cs
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\WpfApp1\obj\Debug\ToDo.csproj.GenerateResource.Cache
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\WpfApp1\obj\Debug\ToDo.csproj.CoreCompileInputs.cache
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\WpfApp1\obj\Debug\ToDo.csprojResolveAssemblyReference.cache
