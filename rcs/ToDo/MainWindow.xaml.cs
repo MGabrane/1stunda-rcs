@@ -17,6 +17,9 @@ namespace ToDo
 {
     using System.Collections.ObjectModel;
     using System.IO;
+    using System.Windows.Input;
+
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -62,10 +65,19 @@ namespace ToDo
             this.ToDoList.Add(todosFromFile);
         }
 
-        private void CloseButton_Click(object sender, RoutedEventArgs e)
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             File.WriteAllLines(@"C:\Users\Madza\Desktop\Code1_buyList", this.ToDoList);
-            Close();
+        }
+
+        private void toDoListName_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                this.ToDoList.Add(this.toDoListName.Text);
+                this.toDoListName.Text = "";
+            }
         }
     }
 }

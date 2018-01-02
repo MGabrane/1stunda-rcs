@@ -1,4 +1,5 @@
 ﻿<Window x:Class="ToDo.MainWindow"
+        Closing="Window_Closing"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -11,8 +12,7 @@
             <ColumnDefinition Width="333*"/>
             <ColumnDefinition Width="11*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="toDoListName" HorizontalAlignment="Left" Height="35" Margin="35,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
-        <Button x:Name="CloseButton" Click="CloseButton_Click" Content="X" HorizontalAlignment="Left" Margin="297,10,0,464.2" Width="21" RenderTransformOrigin="0.5,0.511"/>
+        <TextBox KeyDown="toDoListName_KeyDown" x:Name="toDoListName" HorizontalAlignment="Left" Height="35" Margin="35,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
         <Button x:Name="addToDoThingButton" Click="AddListToDoButton_Click" Content="ADD" HorizontalAlignment="Left" Height="35" Margin="239,45,0,0" VerticalAlignment="Top" Width="79"/>
         <ScrollViewer Margin="35,101,99.4,32.2">
             <ListBox x:Name="ToDoListControl" HorizontalAlignment="Right">
