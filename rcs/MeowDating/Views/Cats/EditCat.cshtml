@@ -5,26 +5,48 @@
 
 @using (Html.BeginForm("EditCats", "Cats", FormMethod.Post))
 {
-    <div class="row">
-        <div class="col-md-6">Cat Name:</div>
-        <div class="col-md-6">@Html.EditorFor(Model => Model.CatName)</div>
-    </div>
+    @Html.HiddenFor(Model => Model.CatId)
+    <div class="form-horizontal">
+        <div class="form-group">
+            <label class="col-md-2">Cats name</label>
+            <div class="col-md-10">
+                @Html.EditorFor(Model => Model.CatName, new { htmlAtributes = new { @class = "from control" } })
+                @Html.ValidationMessageFor(model => model.CatName, "", new { @class = "text danger" })
 
-    <div class="row">
-        <div class="col-md-6">Cat Age:</div>
-        <div class="col-md-6">@Html.EditorFor(Model => Model.CatAge)</div>
-    </div>
+            </div>
+        </div>
 
-    <div class="row">
-        <div class="col-md-6">Cat image:</div>
-        <div class="col-md-6">@Html.EditorFor(Model => Model.CatImage)</div>
-    </div>
+        <div class="form-group">
+            <label class="col-md-2">Cats Age</label>
+            <div class="col-md-10">
+                @Html.EditorFor(Model => Model.CatAge, new { htmlAtributes = new { @class = "from control" } })
+                @Html.ValidationMessageFor(model => model.CatAge, "", new { @class = "text danger" })
 
-    <div class="row">
-        <div class="col-md-6">Cat description:</div>
-        <div class="col-md-6">@Html.EditorFor(Model => Model.CatDescription)</div>
-    </div>
+            </div>
+        </div>
 
-    <input type="submit" value="Izveidot kaķi" />
+        <div class="form-group">
+            <label class="col-md-2">Cats image</label>
+            <div class="col-md-10">
+                @Html.EditorFor(Model => Model.CatImage, new { htmlAtributes = new { @class = "from control" } })
+                @Html.ValidationMessageFor(model => model.CatImage, "", new { @class = "text danger" })
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-2">Cats description</label>
+            <div class="col-md-10">
+                @Html.EditorFor(Model => Model.CatDescription, new { htmlAtributes = new { @class = "from control" } })
+                @Html.ValidationMessageFor(model => model.CatDescription, "", new { @class = "text danger" })
+
+            </div>
+        </div>
+
+        <div class="form-group"></div>
+
+
+        <input type="submit" value="Saglabāt kaķi" />
+    </div>
 }
 

@@ -10,5 +10,7 @@ namespace MeowDating.Models
     public class CatDb : DbContext
     {
         public DbSet<CatProfile> CatProfiles { get; set; }
+
+        public DbSet<File> Files { get; set; }
     }
 }

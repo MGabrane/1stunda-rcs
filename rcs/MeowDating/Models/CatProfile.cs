@@ -12,14 +12,21 @@ namespace MeowDating.Models
         [Key]
         public int CatId { get; set; }
 
-        [Required]
+        [Display(Name ="Vārds")]
+        [Required(ErrorMessage ="Kaķim vajag vārdu!")]
         public string CatName { get; set; }
 
+        [Display(Name = "Vecums")]
+        [Range(1, 20, ErrorMessage = "Kaķa vecums var būt no 1-20 gadiem")]
         public int CatAge { get; set; }
 
+        [Display(Name = "Foto")]
         public string CatImage { get; set; }
 
-        [Required]
+        [Display(Name = "Apraksts")]
+        [Required (ErrorMessage ="Kādu vārdu par kaķīti vajag")]
         public string CatDescription { get; set; }
+
+        public virtual File ProfilePicture { get; set; }
     }
 }

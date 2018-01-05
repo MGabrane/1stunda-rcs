@@ -72,3 +72,4 @@ C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\MeowDating\obj\Debug\MeowDating.pdb
 C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\MeowDating\obj\Debug\MeowDating.Migrations.madecatnamerequiredBecauseIwantedto.resources
 C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\MeowDating\obj\Debug\MeowDating.csproj.GenerateResource.Cache
 C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\MeowDating\obj\Debug\MeowDating.Migrations.addnewfield.resources
+C:\Users\Madza\Desktop\Code1\1stunda-rcs\rcs\MeowDating\obj\Debug\MeowDating.Migrations.addednewfield.resources

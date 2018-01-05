@@ -5,11 +5,11 @@ using System.Web;
 using System.Web.Mvc;
 
 namespace MeowDating.Controllers
-{ 
-    using System.Data.Entity.Migrations;
-
+{
+    using System.Data.Entity;
     using MeowDating.Models;
-
+    using System.IO;
+    
     public class CatsController : Controller
     {
        // GET: Cats
@@ -37,7 +37,7 @@ namespace MeowDating.Controllers
 
              if (ModelState.IsValid == false)
              {
-                return RedirectToAction("Index");
+                return View(userCreatedCat);
              }
              //Izveidot savienojumu ar datubāzi
              using (var catDb = new CatDb())
@@ -53,11 +53,35 @@ namespace MeowDating.Controllers
         }
 
         [HttpPost]
-        public ActionResult EditCat(CatProfile catProfile)
+        public ActionResult EditCat(CatProfile catProfile, HttpPostedFileBase uploadedPicture)
         {
+            if (ModelState.IsValid == false)
+            {
+                return View(catProfile);
+            }
+
             using (var catDb = new CatDb())
             {
-                catDb.Entry(catProfile).CurrentValues.SetValues(catProfile);
+                //Izveidojam jaunu profila bildes jaunu eksamplāru, ko ierakstīt datu bāzē
+                var ProfilePic = new File();
+                //saglabājam pic nosaukumu
+                ProfilePic.FileName = Path.GetFileName(uploadedPicture.FileName);
+                //saglabajam bildes tipu
+                ProfilePic.ContentType = uploadedPicture.ContentType;
+                
+                //Izmantojam BinaryReader lai pārvestu bildi baitos
+                using (var reader = new BinaryReader(uploadedPicture.InputStream))
+                {
+                    ProfilePic.Content = reader.ReadBytes(uploadedPicture.ContentLength);
+                }
+
+                Profile.catProfileId = catProfile.CatId;
+                ProfilePic.CatProfile = catProfile;
+
+                catDb.Files.Add(ProfilePic);
+
+                catProfile.ProfilePicture = ProfilePic;
+                catDb.Entry(catProfile).State = EntityState.Modified;
                 catDb.SaveChanges();
             }
 
@@ -70,8 +94,8 @@ namespace MeowDating.Controllers
         {
             using (var catDb = new CatDb())
             {
-                var editableCatId = catDb.CatProfiles.First(catProfile => catProfile.CatId == editableCatId);
-                return View("EditCat", editableCatId);
+                var editableCat = catDb.CatProfiles.First(catProfile => catProfile.CatId == editableCatId);
+                return View("EditCat", editableCat);
             }
         }
 
