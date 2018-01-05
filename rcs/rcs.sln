@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuyList", "BuyList\BuyList.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo", "ToDo\ToDo.csproj", "{17CBF84E-B4C3-4FAA-8887-EF128A3DDA34}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeowDating", "MeowDating\MeowDating.csproj", "{709CD001-54B3-4DDD-ABF5-179CA355082B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{17CBF84E-B4C3-4FAA-8887-EF128A3DDA34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17CBF84E-B4C3-4FAA-8887-EF128A3DDA34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17CBF84E-B4C3-4FAA-8887-EF128A3DDA34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{709CD001-54B3-4DDD-ABF5-179CA355082B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{709CD001-54B3-4DDD-ABF5-179CA355082B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{709CD001-54B3-4DDD-ABF5-179CA355082B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{709CD001-54B3-4DDD-ABF5-179CA355082B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

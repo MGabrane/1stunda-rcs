@@ -60,7 +60,7 @@ namespace ToDo
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            var todosFromFile = File.ReadAllText(@"C:\Users\Madza\Desktop\Code1_buyList");
+            var todosFromFile = File.ReadAllLines(@"C:\Users\Madza\Desktop\Code1_buyList");
 
             this.ToDoList.Add(todosFromFile);
         }
@@ -76,12 +76,9 @@ namespace ToDo
             if (e.Key == Key.Enter)
             {
                 this.ToDoList.Add(this.toDoListName.Text);
+                //pārskata teksta lauka struktūru ar tukšumu (t.i.nodzēš lauku)
                 this.toDoListName.Text = "";
             }
         }
     }
 }
-
-
-
-

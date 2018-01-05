@@ -1,0 +1,25 @@
+﻿@model List<MeowDating.Models.CatProfile>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@Html.ActionLink("Pievienot jaunu kaķi", "AddCat", "Cats")
+
+
+
+<!-- kad vēlamies izsaukt C# kodu, lietojam at simbolu -->
+
+@foreach (var cat in Model)
+{
+    @Html.ActionLink("Rediģēt kaķi", "EditCat", "Cats", new { editableCatId = cat.CatId }, null)
+    <div class="row">
+        <div class="col-md-12">
+            @Html.ActionLink("Nodzēst kaķi", "DeleteCats", "Cats", new { deletableCatId = cat.CatId }, null)
+            <h2>Cat name: @cat.CatName</h2>
+            <p>Cat age is @cat.CatAge</p>
+            <img src="@cat.CatImage" width="400" height="400"/>
+            <p>@cat.CatDescription</p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        </div>
+    </div>
+}

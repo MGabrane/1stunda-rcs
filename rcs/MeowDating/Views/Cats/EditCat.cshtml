@@ -1,0 +1,30 @@
+﻿@model MeowDating.Models.CatProfile
+
+
+<h2>Rediģēt kaķi</h2>
+
+@using (Html.BeginForm("EditCats", "Cats", FormMethod.Post))
+{
+    <div class="row">
+        <div class="col-md-6">Cat Name:</div>
+        <div class="col-md-6">@Html.EditorFor(Model => Model.CatName)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">Cat Age:</div>
+        <div class="col-md-6">@Html.EditorFor(Model => Model.CatAge)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">Cat image:</div>
+        <div class="col-md-6">@Html.EditorFor(Model => Model.CatImage)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">Cat description:</div>
+        <div class="col-md-6">@Html.EditorFor(Model => Model.CatDescription)</div>
+    </div>
+
+    <input type="submit" value="Izveidot kaķi" />
+}
+
