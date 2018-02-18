@@ -32,5 +32,14 @@ namespace MeowDating.Controllers
 
             return View();
         }
+
+        public ActionResult Blogs()
+        {
+            ViewBag.Message = "Kaķu blogs.";
+
+            return View();
+        }
+
     }
+
 }

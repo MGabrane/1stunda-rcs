@@ -190,27 +190,25 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\CatsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201801041828300_made catnamerequired. Because I wantedto..cs" />
-    <Compile Include="Migrations\201801041828300_made catnamerequired. Because I wantedto..Designer.cs">
-      <DependentUpon>201801041828300_made catnamerequired. Because I wantedto..cs</DependentUpon>
+    <Compile Include="Migrations\201801081754418_new.cs" />
+    <Compile Include="Migrations\201801081754418_new.Designer.cs">
+      <DependentUpon>201801081754418_new.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201801041835307_add new field.cs" />
-    <Compile Include="Migrations\201801041835307_add new field.Designer.cs">
-      <DependentUpon>201801041835307_add new field.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801051839560_added new field.cs" />
-    <Compile Include="Migrations\201801051839560_added new field.Designer.cs">
-      <DependentUpon>201801051839560_added new field.cs</DependentUpon>
+    <Compile Include="Migrations\201801091838512_add newField.cs" />
+    <Compile Include="Migrations\201801091838512_add newField.Designer.cs">
+      <DependentUpon>201801091838512_add newField.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CatDb.cs" />
+    <Compile Include="Models\BlogThings.cs" />
     <Compile Include="Models\CatProfile.cs" />
     <Compile Include="Models\File.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -241,7 +239,9 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -275,9 +275,12 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Cats\Index.cshtml" />
     <Content Include="Views\Cats\AddCat.cshtml" />
     <Content Include="Views\Cats\EditCat.cshtml" />
+    <Content Include="Views\Cats\Index.cshtml" />
+    <Content Include="Views\Blog\Index.cshtml" />
+    <Content Include="Views\Blog\CreateBlog.cshtml" />
+    <Content Include="Views\Blog\EditBlog.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -296,14 +299,11 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201801041828300_made catnamerequired. Because I wantedto..resx">
-      <DependentUpon>201801041828300_made catnamerequired. Because I wantedto..cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201801081754418_new.resx">
+      <DependentUpon>201801081754418_new.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801041835307_add new field.resx">
-      <DependentUpon>201801041835307_add new field.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801051839560_added new field.resx">
-      <DependentUpon>201801051839560_added new field.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201801091838512_add newField.resx">
+      <DependentUpon>201801091838512_add newField.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -3,50 +3,70 @@
 
 <h2>Rediģēt kaķi</h2>
 
-@using (Html.BeginForm("EditCats", "Cats", FormMethod.Post))
+@using (Html.BeginForm("EditCat", "Cats", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     @Html.HiddenFor(Model => Model.CatId)
-    <div class="form-horizontal">
-        <div class="form-group">
-            <label class="col-md-2">Cats name</label>
-            <div class="col-md-10">
-                @Html.EditorFor(Model => Model.CatName, new { htmlAtributes = new { @class = "from control" } })
-                @Html.ValidationMessageFor(model => model.CatName, "", new { @class = "text danger" })
 
-            </div>
+<div class="form-horizontal">
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.CatName, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.CatName, new { htmlAtributes = new { @class = "from control" } })
+            @Html.ValidationMessageFor(model => model.CatName, "", new { @class = "text danger" })
+
         </div>
-
-        <div class="form-group">
-            <label class="col-md-2">Cats Age</label>
-            <div class="col-md-10">
-                @Html.EditorFor(Model => Model.CatAge, new { htmlAtributes = new { @class = "from control" } })
-                @Html.ValidationMessageFor(model => model.CatAge, "", new { @class = "text danger" })
-
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label class="col-md-2">Cats image</label>
-            <div class="col-md-10">
-                @Html.EditorFor(Model => Model.CatImage, new { htmlAtributes = new { @class = "from control" } })
-                @Html.ValidationMessageFor(model => model.CatImage, "", new { @class = "text danger" })
-
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label class="col-md-2">Cats description</label>
-            <div class="col-md-10">
-                @Html.EditorFor(Model => Model.CatDescription, new { htmlAtributes = new { @class = "from control" } })
-                @Html.ValidationMessageFor(model => model.CatDescription, "", new { @class = "text danger" })
-
-            </div>
-        </div>
-
-        <div class="form-group"></div>
-
-
-        <input type="submit" value="Saglabāt kaķi" />
     </div>
-}
 
+    <div class="form-group">
+        @Html.LabelFor(model => model.CatAge, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.CatAge, new { htmlAtributes = new { @class = "from control" } })
+            @Html.ValidationMessageFor(model => model.CatAge, "", new { @class = "text danger" })
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.CatDescription, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.CatDescription, new { htmlAtributes = new { @class = "from control" } })
+            @Html.ValidationMessageFor(model => model.CatDescription, "", new { @class = "text danger" })
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.CatImage, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.CatImage, new { htmlAtributes = new { @class = "from control" } })
+            @Html.ValidationMessageFor(model => model.CatImage, "", new { @class = "text danger" })
+
+        </div>
+    </div>
+
+
+    @if (Model.ProfilePicture != null)
+    {
+        <div class="form-group">
+            @Html.Label("Šobrīdējā profila bilde", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+
+                <img src="~/Cats/GetCatProfilePicture?catProfilePictureId=@Model.ProfilePicture.CatProfileId" class="img-responsive" />
+
+            </div>
+        </div>
+    }
+
+    <div class="form-group">
+        Kaķa attēls:
+        <div class="col-md-10">
+            <input type="file" id="uploadedPicture" name="uploadedPicture" />
+        </div>
+    </div>
+
+</div>
+
+    <input type="submit" value="Saglabāt kaķi" />
+  
+ }

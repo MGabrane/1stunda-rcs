@@ -20,6 +20,12 @@ namespace MeowDating
             );
 
             routes.MapRoute(
+                name: "BlogaCels",
+                url: "Blogs/{action}/{id}",
+                defaults: new { controller = "Blog", action = "Index", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

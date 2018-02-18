@@ -1,0 +1,23 @@
+﻿@model List<MeowDating.Models.BlogThings>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@Html.ActionLink("Izveidot jaunu bloga ierakstu", "CreateBlog", "Blog")
+
+
+
+<!-- kad vēlamies izsaukt C# kodu, lietojam at simbolu -->
+
+@foreach (var blog in Model)
+{
+    @Html.ActionLink("Rediģēt ierakstu", "EditBlog", "Blog", new { editableBlogId = blog.BlogId }, null)
+    <div class="row">
+        <div class="col-md-12">
+            @Html.ActionLink("Izdzēst ierakstu", "DeleteBlog", "Blog", new { deletableBlogId = blog.BlogId }, null)
+            <h2> @blog.BlogTitle</h2>
+            <p>@blog.BlogWrite</p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        </div>
+    </div>
+ }
